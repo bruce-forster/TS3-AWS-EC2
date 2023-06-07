@@ -45,7 +45,6 @@ sudo cp /home/ubuntu/ts3server.sqlitedb /home/teamspeak/teamspeak3-server_linux_
 sudo chown teamspeak:teamspeak /home/teamspeak/teamspeak3-server_linux_amd64/ts3server.sqlitedb
 sudo -u teamspeak echo "license_accepted=1" > /home/teamspeak/teamspeak3-server_linux_amd64/.ts3server_license_accepted
 sudo -u teamspeak echo "export TS3SERVER_LICENSE=accept" >> /home/teamspeak/.bashrc
-#sudo -u teamspeak /home/teamspeak/teamspeak3-server_linux_amd64/ts3server
 sudo -u teamspeak bash -c 'source ~/.bashrc && /home/teamspeak/teamspeak3-server_linux_amd64/ts3server >>/home/teamspeak/first-run.log 2>&1 &'
 killall -9 ts3server
 sudo -u teamspeak /home/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh restart
